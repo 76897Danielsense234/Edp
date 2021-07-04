@@ -1,0 +1,967 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+li {
+    list-style: none;
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+  .fd{
+    position: absolute;
+    width: 120px;
+    margin-left: 0;
+    margin-top: 0;
+    
+ } 
+ h1 {
+    font-size: calc(2em * var(--text-multiplier));
+  }
+  h2 {
+    font-size: calc(1.5em * var(--text-multiplier));
+  }
+  p {
+    font-size: calc(1em * var(--text-multiplier));
+  }
+  /* Declare a font size multiplier variable */
+h1 {
+    --text-multiplier: 1;
+  }
+/* Increase the size of the multiplier on bigger screens */
+@media (min-width: 48rem) {
+    h1 {
+      --text-multiplier: 1.5;
+    }
+  }
+/* .fd h1{
+   font-size: 5vw;
+   font-weight: bold;
+   width: auto;
+   text-align:center;
+   justify-content: center; */
+
+
+ /* Increase font sizes by 1.5x on bigger screens */
+ 
+
+@media (min-width: 48rem) {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2.25em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+
+ @media screen and (min-width:601px) {
+       .fd {
+       font-size: 80px;
+     }   
+ }
+ @media screen and (min-width:600px) {
+    .fd {
+    font-size: 30px;
+  }   
+}
+.bod{
+  background-position: center 3px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  /* margin-top: -1%; */
+  height: 500px;
+  background-attachment: scroll;
+  width: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  /* background-blend-mode: darken;  */
+  /* background-image: url("assest/rem.png"); */
+}
+.bod>h1:hover{
+  color: rgb(255, 11, 44);
+  transition-duration: ease in 0.3s ease out 0.5s;
+}
+@media only screen and (max-width:400px) {
+ .bod{
+   background-image: url('assest/min.png');
+ }
+
+  
+}
+
+.header{
+     /* background-image: url(assest/pic\ \(18\).png) ; */
+    background-color:rgb(238, 219, 52);
+    border-bottom: 2px solid rgba(13, 13, 167, 0.973);
+    tab-size: 18px;
+    position:relative;
+    display: block;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+   /* line-height: 13px; */
+}
+.aside {
+    flex: 25%;
+  }
+
+.down{
+    /* margin-bottom: 0%; */
+    display:block;
+    /* background-position: left; */
+    flex-direction: row;
+    /* justify-content:space-between; */
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+    /* height: 150%; */
+    /* width: 50%; */
+    /* margin-left: 50%; */
+    flex-direction: column;
+    text-align: center;
+    flex: 25%;
+    /* background-color: rgb(41, 34, 34); */
+    /* padding: 0%; */
+     padding-left: 0%;
+     box-sizing: border-box;
+}
+.new{
+    text-size-adjust: 6rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.dan {
+    display: none;
+    cursor: pointer;
+}
+
+
+.bar {
+    display: block;
+    width: 25px;
+    /* border-radius: 15; */
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+
+.nav-link:hover{
+    color: rgb(184, 18, 18);
+}
+
+.nav-logo {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color:black;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position:fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color:whitesmoke;
+        width: 100%;
+        opacity: 0.8;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+            
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .dan {
+        display: block;
+        cursor: pointer;
+        padding-bottom: 4rem;
+    }
+
+}
+/* 
+==================================
+================================== */
+.wow>center>h2{
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+.wow>p{
+  margin-top: 0px;
+  font-size: 1.1em;
+}
+.services{
+  background-image: url(assest/pic\ \(12\).png);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.view{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border: yellow 3px solid;
+  border-radius: 10%;
+  height: 25em;
+  padding: 0.5em;
+  margin: 1.3em;
+  width: 20em;
+  transition-duration: 1.7s;
+  
+}
+.view>h3{
+  text-decoration: underline;
+}
+.view:hover{
+  background-color: black;
+  border: rgb(6, 8, 112) 5px solid;
+  margin-top: -1em;
+  /* transition-duration: 1.7s; */
+}
+/*  */
+.cont {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.cont .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+/*  */
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+/* Add shadows on hover */
+
+.price:hover {
+  box-shadow: 0 8px 12px 0
+  rgb(24, 21, 21);
+  transition: 0.3s;
+}
+.price .header:hover{
+  box-shadow: 0 8px 12px 0
+  rgb(231, 247, 7)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+/* Changes the width of the three
+columns to 100% (to stack horizontally
+on small screens) */
+
+@media only screen and
+(max-width: 600px) {
+
+  .columns {
+      width: 100%;
+  }
+}
+
+
+
+/*footer start  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+  }
+  footer{
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    background: #111;
+    
+  }
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .content p,a{
+    color: #fff;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+  
+  }
+  footer .content p{
+    text-align: justify;
+  }
+  footer .content .thing .topic{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .thing i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    color: black;
+    background: #ecdd05;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color:  rgb(243, 6, 6);
+  }
+
+  
+  footer .bottom{
+    width: 100%;
+    text-align: right;
+    color: #d9d9d9;
+    padding: 0 40px 5px 0;
+  }
+  footer .bottom a{
+    color: #eb2f06;
+  }
+  footer a{
+    transition: all 0.3s ease;
+  }
+  footer a:hover{
+    color: #eb2f06;
+  }
+  @media (max-width:1100px) {
+    footer .content .middle{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width:950px){
+    footer .content .box{
+      width: 50%;
+    }
+    .content .right{
+      margin-top: 40px;
+    }
+  }
+  .big{
+    margin-left: 40%;
+    /* border-style: double 100em; */
+    box-sizing: border-box;
+  }
+  big>ul:hover{
+    color: rgba(255, 255, 0, 0.993);
+  }
+  @media (max-width:560px){
+    footer{
+      position: relative;
+    }
+    footer .content .box{
+      width: 100%;
+      margin-top: 30px;
+    }
+    footer .content .middle{
+      padding-left: 0;
+    }
+  }
+  
+/*footer end  */
+
+
+
+/* /////////////////////////////////////\
+/////////////////////////////////////\ */
+/*          ABOUT PAGE CSS           */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: url("min.png");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.0%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  border-radius: 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width: 100%;
+}
+.about-section:hover{
+  color: rgb(255, 251, 9);
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(5, 5, 5);
+  color: white;
+
+} 
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display:flex ;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: rgb(231, 216, 0);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+    height: 50%;
+  }
+}
+
+
+
+
+/* ////////////////// */
+/* ABOUT END"/
+========================================
+========================================
+
+/* form start */
+/* body
+{
+margin:0 auto;
+padding:0px;
+text-align:center;
+width:200%;
+font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+background-color:#AED6F1;
+} */
+#wrapper
+{
+margin:0 auto;
+padding:0px;
+text-align:center;
+display: block;
+}
+#wrapper h1
+{
+margin-top:50px;
+font-size:45px;
+color:#1B4F72;
+}
+#wrapper h1 p
+{
+font-size:18px;
+}
+#contact_form_div
+{
+width:100%;
+margin-left:1px;
+padding:10px;
+border-radius: 30px;
+padding-bottom: 9px solid  yellow;
+background-color:#000000;
+}
+#contact_form_div #contact_label
+{
+margin-bottom:30px;
+font-size:25px;
+font-weight:bold;
+color:white;
+text-decoration:underline;
+}
+#contact_form_div input[type="text"]
+{
+width:550px;
+height:50px;
+border-radius:20px;
+font-size:17px;
+padding-left:5px;
+border:none;
+}
+#contact_form_div textarea
+{
+width:600px;
+height:70px;
+border-radius:20px;
+font-size:17px;
+padding:5px;
+}
+#contact_form_div input[type="submit"]
+{
+width:200px;
+height:40px;
+border:none;
+border-radius:25px;
+font-size:17px;
+background-color:#000000;
+border-bottom:4px solid #d3bf08;
+color:#ffffff;
+font-weight:bold;
+}
+
+#contact_form_div input[type="submit"]:hover{
+  color: #000;
+  animation: shake 0.5s;
+  background-color: #d3bf08;
+  /* padding-bottom: 9px solid rgb(189, 18, 18); */
+}
+
+@media only screen and (min-width:700px) and (max-width:995px)
+{
+#wrapper
+{
+  width:100%;
+}
+#wrapper h1
+{
+  font-size:30px;
+}
+#contact_form_div
+{
+  width:50%;
+  margin-left:25%;
+  padding-left:0px;
+  padding-right:0px;
+}
+#contact_form_div input[type="text"]
+{
+  width:80%;
+}
+#contact_form_div textarea
+{
+  width:80%;
+}
+#contact_form_div input[type="submit"]
+{
+  width:80%;
+}
+}
+@media only screen and (min-width:400px) and (max-width:699px)
+{
+#wrapper
+{
+  width:100%;
+}
+#wrapper h1
+{
+  font-size:30px;
+}
+#contact_form_div
+{
+  width:60%;
+  margin-left:20%;
+}
+#contact_form_div input[type="text"]
+{
+  width:80%;
+}
+#contact_form_div textarea
+{
+  width:80%;
+}
+#contact_form_div input[type="submit"]
+{
+  width:80%;
+}
+}
+@media only screen and (min-width:100px) and (max-width:399px)
+{
+#wrapper
+{
+  width:100%;
+}
+#wrapper h1
+{
+  font-size:25px;
+}
+#contact_form_div
+{
+  width:90%;
+  margin-left:5%;
+  padding-left:0px;
+  padding-right:0px;
+}
+#contact_form_div input[type="text"]
+{
+  width:80%;
+}
+#contact_form_div textarea
+{
+  width:80%;
+}
+#contact_form_div input[type="submit"]
+{
+  width:80%;
+}
+}
+/* End */
+
+
+/*  */
+/*  About sign up*/
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  width: 50px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(3, 3, 3);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+  color: rgb(255, 251, 1);
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  /* padding: 14px 20px; */
+  width: 50%;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  /* float: left; */
+  width:0%;
+}
+
+/* Add padding to container elements */
+.all {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/* / About sign in*/
+
+
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    /* box-sizing: border-box; */
+}
+
+/* Set a style for all buttons */
+
+bant {
+    background-color: #48d1cc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.cancelbtm {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #4682b4;
+}
+
+/* Center the image and position
+the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.fash {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+   padding-top: 60px;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel
+button on extra small screens */
+
+@media screen and(max-width: 300px){
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtm {
+       width: 100%;
+    }
+}
+/* / */
